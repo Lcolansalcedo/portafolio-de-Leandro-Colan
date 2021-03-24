@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="animaciones.css"> 
+  <meta http-equiv="X-UA-Compatible " content="ie=edge">
+    <script language="JavaScript"src='javascript/jquery-3.6.0.min.js'></script>
+      <script type="text/javascript" src='javascript/script.js'></script>
+      <script src="javascript/carrusel/carrusel.js"></script>
+      <script src="javascript/carrusel/carrusel2.js"></script>
+      <script src="javascript/carrusel/carrusel3.js"></script>
+  
+    
+      <title>Portafolio de Leandro Colan</title>
+
+
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <div class="menu_bar">
+            <a class="icon-menu"></a>
+        </div>
+        <nav id="botones">
+        <ul>
+        <li><a href="#presentacion">Presentacion</a></li>
+        <li><a href="#trabajo">Trabajo</a></li>
+        <li><a href="#aptitudes">Foda Personal</a></li>
+        </ul>
+        </nav>
+        <nav id="foto">
+            <img src="imagenes/foto de perfil.jpg" >
+        </nav>
+        <nav id="contactos">
+            <ul>
+<li><a href="https://www.linkedin.com/in/leandro-colan/"><img src="iconos/459-linkedin2.svg"></a></li>
+<li><a href="https://www.instagram.com/leandro_colan2014/?igshid=1ihj4zu1m8uzm" ><img src="iconos/403-instagram.svg"></a></li>
+<li><a href="https://www.facebook.com/LEANDRO.LEONEL2011"><img src="iconos/401-facebook.svg"></a></li>
+            </ul>
+        </nav>
+      
+    </header>
+    
+        <!--presentacion-->
+<section class="paradax" id="presentacion">
+<h1>Presentación</h1>
+<p>Hola!,me presento, me llamo Leandro Colán.Tengo 21 años, soy estudiante de ingenieria en sistemas y desarrollador web Front-End con conocimientos de diseño web.Me considero una persona proactiva y que constantemente se pone obstaculos para resolver y crecer en experiencia y conocimiento.Mi meta es especializarme en programación web Full-Stack.Les doy la bienvenida a mi portafolio, espero poder trabajar con ustedes y aportar todos mis conocimientos para un mutuo beneficio.</p>
+<p><a href="cv/Desarrollador web front-end.docx">Descargar cv</a></p>
+
+
+<div id="flecha">
+    <a href="#trabajo" ><img src="imagenes/flecha.png" alt=""></a>
+   
+</div>
+</section>
+
+<!--termina presentacion-->
+<!--conocimientos etc-->
+<section class="paradax" id="trabajo" >
+    <h1>Sobre Trabajo</h1>
+ <div id="carrosel" class="carrosel">
+    <div id="imagen-inicio">
+        <img src="imagenes/hombre trabajando.jpg" alt="">
+    </div>
+       <div style="display: none;" id="primerCarrusel" class="primerCarrusel">
+<div class="miSlider fade">
+<img src="imagenes/estudios1.jpg">
+</div>
+<div class="miSlider fade">
+<img src="imagenes/estudios2.jpg">
+</div>
+<div class="miSlider fade">
+    <img src="imagenes/estudios3.jpg" >
+</div>
+<div class="direcciones">
+    <a href="#primerCarrusel" class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+    <a href="#primerCarrusel" class="siguiente"onclick="avanzaSlide(1)">&#10095;</a>
+</div>
+<div class="barras">
+    <span class="barra active" onclick="posicionSlide(1)"></span>
+    <span class="barra" onclick="posicionSlide(2)"></span>
+    <span class="barra" onclick="posicionSlide(3)"></span>
+</div>
+
+
+
+       </div>
+
+       <div style="display: none;" id="segundoCarrusel" class="segundoCarrusel">
+        <div class="miSlider2 fade">
+        <img src="imagenes/experiencia.jpg">
+        </div>
+        <div class="miSlider2 fade">
+<video src="imagenes/adada.mp4" controls="controls" preload="none" poster="imagenes/detalles-1.jpg" ></video>
+        </div>
+        <div class="miSlider2 fade">
+            <video src="imagenes/HJHJ.mp4" controls="controls" preload="none" poster="imagenes/detalles-2.jpg" ></video>
+        </div>
+        <div class="direcciones">
+            <a href="#segundoCarrusel" class="atras" onclick="avanzaSlide2(-1)">&#10094;</a>
+            <a href="#segundoCarrusel" class="siguiente"onclick="avanzaSlide2(1)">&#10095;</a>
+        </div>
+        <div class="barras2">
+            <span class="barra2 active2" onclick="posicionSlide2(1)"></span>
+            <span class="barra2" onclick="posicionSlide2(2)"></span>
+            <span class="barra2" onclick="posicionSlide2(3)"></span>
+        </div>
+        
+        
+       
+        
+
+    
+ </div>
+ <div style="display: none;"  id="tercerCarrusel" class="tercerCarrusel">
+        <div class="miSlider3 fade">
+        <img src="imagenes/habilidades1.jpg">
+        </div>
+        <div class="miSlider3 fade">
+        <img src="imagenes/habilidades2.jpg">
+        </div>
+        <div class="miSlider3 fade">
+            <img src="imagenes/habilidades3.jpg" >
+        </div>
+        <div class="direcciones">
+            <a href="#tercerCarrusel" class="atras" onclick="avanzaSlide3(-1)">&#10094;</a>
+            <a href="#tercerCarrusel" class="siguiente"onclick="avanzaSlide3(1)">&#10095;</a>
+        </div>
+        <div class="barras3">
+            <span class="barra3 active3" onclick="posicionSlide3(1)"></span>
+            <span class="barra3" onclick="posicionSlide3(2)"></span>
+            <span class="barra3" onclick="posicionSlide3(3)"></span>
+        </div>
+        
+        
+               </div>
+ <ul>
+<li><a href="#carrosel" onclick="mostrarContenido('primerCarrusel'),ocultarContenido('imagen-inicio'),ocultarContenido('segundoCarrusel'),ocultarContenido('tercerCarrusel') ">Estudios </a>
+</li>
+<li>
+    <a href="#carrosel" onclick="mostrarContenido('segundoCarrusel'),ocultarContenido('imagen-inicio'),ocultarContenido('primerCarrusel'),ocultarContenido('tercerCarrusel') ">Experiencia</a>
+</li>
+<li>
+    <a href="#carrosel"onclick="mostrarContenido('tercerCarrusel'),ocultarContenido('imagen-inicio'),ocultarContenido('segundoCarrusel'),ocultarContenido('primerCarrusel') ">Habilidades</a>
+</li>
+
+ </ul>
+ <div id="flecha2">
+    <a href="#presentacion" ><img src="imagenes/flecha.png" alt=""></a>
+   
+</div>
+<div id="flecha3">
+    <a href="#aptitudes" ><img src="imagenes/flecha.png" alt=""></a>
+   
+</div>
+</section>
+<!--termina conocimientos etc-->
+<!--fortalezas etc-->
+
+   <section class="paradax" id="aptitudes" >
+ <div  class="caja">
+   <h1>Foda Personal</h1>
+     <h2 >Fortalezas</h2> 
+     <div>
+        <ul >
+            
+
+            <li> -Pro activo</li>
+            <li>-Aprendizaje rapido</li>
+            <li>-Persistente</li>
+            <li>-Detallista</li>
+           
+        </ul>
+
+</div>
+    <h2>Oportunidades</h2>
+<div >
+         
+   
+<ul >
+<li>-Muchos cursos por estudiar</li>
+<li>-Buen ambiente para trabajar desde casa</li>
+<li>-Buen acceso a internet</li>
+<li>-Facilidad para moverse(si es requerido)</li>
+</ul>
+   
+       </div>
+    
+    <h2 >Debilidades</h2> 
+   
+        <div  >
+         
+       
+       <ul  >
+            <li>-Me sobre exijo</li>
+            <li>-Creatividad limitada</li>
+            <li>-Poca experiencia</li>
+            <li>-Pesimismo en mucha dificultad </li>
+            </ul>
+
+        
+ 
+</div>
+<h2 >Amenazas</h2> 
+    
+<div >
+     
+        <ul >
+            <li>-Estudiante(Tiempo limitado en periodo de pruebas)</li>
+            <li>-Tecnologica limitada</li>
+            <li>-Nuevo en el mundo laboral</li>
+           
+            </ul>
+  
+
+</div>
+        
+</div>
+
+<div id="flecha2">
+    <a href="#trabajo" ><img src="imagenes/flecha.png" alt=""></a>
+   
+</div>
+
+   </section>
+<!--termina fortalezas etc-->
+    <footer>
+        <h1> <a href="#presentacion"> Volver al principio</a></h1>
+        <p><a href="#" class="cta">Info-Contacto</a></p>
+    </footer>
+    <div class="modal-container">
+
+        <div class="modal modal-close">
+            
+            <p class="close">X</p>
+    
+    
+            <div class="modal-textos">
+            <h1> Informacion Y Contactos</h1>
+            <ul>
+                <li>Nombre:Leandro Leonel Colan </li>
+                <li>Edad:21 años</li>
+                <li>Nacionalidad: Argentina</li>
+                
+              <li>Telefono:11 3657-6788</li>
+              <li>Email: Leandro_colan2014@hotmail.com</li>
+    
+            </ul>
+             </div>
+        </div>
+    </div>
+   <script src="javascript/particles.min.js"></script>
+   <script src="javascript/extension.js"></script>
+   
+   <script src="javascript/alerta.js"></script>
+ 
+
+  
+
+</body>
+
+</html>

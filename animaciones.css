@@ -1,0 +1,261 @@
+.paradax{
+    animation-duration: 5s;
+    animation-name: text;
+}
+
+@keyframes text{
+
+    from{
+
+         opacity: 0;
+    }
+       to{
+           opacity: 1   ;
+       }
+    
+}
+
+header{
+    animation-duration: 2s;
+    animation-name: cabeza;
+}
+@keyframes cabeza{
+
+
+    from{
+        transform:translate3d(0,-100%,0);
+        opacity: 0;
+    }
+    to{
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*carrusel*/
+.primerCarrusel,.segundoCarrusel,.tercerCarrusel{
+    max-width: 100%;
+    height:100%;
+max-height: 100vh;
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    
+    margin: auto;
+}
+.miSlider,.miSlider3{
+    width: 100% ;
+    height: 100vh;
+   
+
+    transition: 2s;
+    
+}
+.miSlider img,.miSlider2 img,.miSlider3 img,.miSlider2 img{
+    
+  width: 100%;
+    height:85%;
+
+ 
+    transition: 2s;
+}
+.miSlider2{
+    width: 100% ;
+    height: 100vh;
+    max-height: 100vh;
+    
+}
+.miSlider2 video{
+    width: 100% ;
+
+    height:80%;
+
+    transition: 2s;
+}
+.direcciones{
+width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 60px;
+margin-top:50px ;
+
+    
+}
+.direcciones a{
+    display: inline-block;
+    padding:5px;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.direcciones a:hover{
+    background: rgba(0, 0, 143, 0.446);
+    transition: .5s;
+    color: rgba(0, 0, 0, 0.446);;
+}
+.barras,.barras2,.barras3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+ 
+
+}
+.barra,.barra2,.barra3{
+    cursor: pointer;
+    height: 20px;
+    width: 25px;
+    margin: 0 2px;
+    background: #fff;
+    display: inline-block;
+    margin-left: 3px;
+}
+.active,.active2,.active3{
+    background-color: rgb(28, 0, 128);
+}
+.fade{
+    animation-name:fade;
+    animation-duration: 1.5s;
+  
+} 
+ @keyframes fade {
+        from {opacity: .4;}
+            to{opacity:1;}
+        
+    }
+/*termina carrusel*/
+/*modal*/
+
+    .modal-container{
+        opacity: 0;
+        visibility: hidden;
+        position: fixed;
+        z-index: 100000;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+    
+        align-items: center;
+    }
+    .modal{
+        width: 50%;
+        height: 70%;
+    
+        background-image: url(imagenes/contactos.jpg)  ;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        transition: transform 1s;
+      transform: translateY(0%);
+    border-radius: 15px;
+    }
+    .modal-close{
+        transform: translateY(-200%);
+    }
+   
+    
+    .modal-textos h1{
+        color: #76dbff; 
+        font-size: 35px;
+     
+    }
+ 
+    .modal-textos ul li{
+        color: #ffffff; 
+        font-size: 25px;
+    }
+    .close{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background:rgb(4, 0, 255);
+        color: blanchedalmond;
+        line-height: 25px;
+        cursor:pointer;
+        border-radius: 50%;
+    
+    }
+    .cta{
+        display: inline-block;
+      
+      
+    }
+    
+    /*termina modal*/
+    @media all and (min-width:600px)and (max-width:1023px) {
+
+
+        .modal{
+            width: 75%;
+            height: 70%;
+        
+           
+        }
+       
+        
+        .modal-textos h1{
+        
+            font-size: 35px;
+         
+        }
+     
+        .modal-textos ul li{
+          
+            font-size: 25px;
+        }
+    }
+    @media all and (max-width: 599px) {
+        .modal{
+            width: 90%;
+            height: 65%;
+        
+           
+        }
+        .modal-textos h1{
+              font-size: 25px;
+         
+        }
+     
+        .modal-textos ul li{
+   
+            font-size: 15px;
+        }
+        .direcciones{
+          
+            font-size: 26px;
+            
+            
+        }
+        .barra,.barra2,.barra3{
+           
+            height: 4px;
+            width: 15px;
+         
+        }
+       
+    }

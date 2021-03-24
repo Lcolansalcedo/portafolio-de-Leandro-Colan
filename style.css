@@ -1,0 +1,527 @@
+/* comienza header*/
+html{
+    width: 100%;
+    height: 100%;
+ font-family: sans-serif;
+ scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.icon-menu{
+    display: none;
+    content: url(iconos/bars-solid.svg);
+    width: 35px;
+    height: 35px;
+ 
+}
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+
+header{
+    width: 100%;
+    height: 150px;
+position: relative;
+top:0;
+z-index: 99;
+margin-bottom: 100px;
+display:flex;
+        justify-content: space-evenly;
+
+
+}
+#botones{
+    width: 48%;
+    height: 100%;
+    float: left;
+
+}
+#botones ul{
+ padding-top: 44px;
+}
+#botones ul li{
+
+display: inline;
+text-align:center;
+margin-left: 15px;
+}
+#botones ul li a{
+    text-decoration: none;
+    font-size: 23px;
+    color: #76dbff; 
+    
+}
+#botones ul li a:hover{
+    color: #ffffff;
+    font-size: 24px;
+}
+#foto{
+    float: left;
+    width: 12%;
+    height: 100%;
+    margin-left: 2px;
+}
+#foto img{
+    width: 100%;
+    height: 100%;
+
+}
+#contactos{
+    float: right;
+    width:30% ;
+    height: 100%;
+
+}
+#contactos ul{
+
+    padding-top: 44px;
+    float: right;
+    margin-right: 50px;
+}
+#contactos ul li{
+    display: inline;
+text-align:center;
+margin:15px;
+} 
+#contactos  ul li a {
+    text-decoration: none;
+ 
+}
+#contactos ul li a img{
+    width: 25px;
+    height: 25px;
+}
+/* termina header*/
+/* Empieza cuerpo*/
+
+.paradax{
+    background: #fff fixed no-repeat 50% 50%;
+    background-size: cover;
+    
+   
+}
+/* presentacion*/
+#presentacion{
+    width: 80%;
+
+position: relative;
+margin-top: 300px;
+    margin: 0 auto;
+
+    display: flex;
+    text-align: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    
+
+    background-image: url(imagenes/presentacion.jpg);
+    border-top-right-radius: 20px;
+	border-top-left-radius: 20px; 
+}
+
+#presentacion h1,#trabajo h1,.caja h1{
+    font-size: 55px;
+    color: #76dbff;  
+    margin-top: 0;
+    text-align: center;
+
+}
+#presentacion p{
+    font-size: 38px;
+    
+color: #ffffff;
+
+}
+#presentacion p a{
+    text-decoration: none;
+    float: right;
+    margin-right: 15px;
+    color: #76dbff; 
+    
+}
+#presentacion p a:hover{
+    color: #ffffff;
+}
+ #flecha {
+     width: 50px;
+     height: 50px;
+     margin: 0 auto;
+margin-bottom: 0;
+
+
+     
+ }
+ 
+ #flecha2,#flecha3{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 0;
+
+margin-bottom: 0;
+ }
+ #flecha img,#flecha3 img{
+    width: 100%;
+    height: 100%; 
+ }
+ #flecha2 img{
+    width: 100%;
+    height: 100%; 
+    transform: rotate(-180deg);
+    float: left;
+
+ }
+
+/* termina presentacion*/
+/* sobre trabajo*/
+#trabajo{
+
+    width: 80%;
+    height: 100%;
+background-image: url(imagenes/trabajo.jpg);
+    margin: 0 auto;
+
+
+  display:flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+
+
+}
+
+#trabajo h1{
+    text-align: center;
+     
+    
+}
+.carrosel{
+    width: 100%;
+
+    
+}
+#imagen-inicio{
+    width: 100%;
+
+}
+#imagen-inicio img{
+    width: 100%;
+height: 100%;
+}
+#trabajo ul{
+ text-align: center;
+   width: 100%;
+   height: 50px;
+   margin-bottom: 80px;
+ 
+}
+#trabajo ul li{
+    display: inline;
+
+
+    
+}
+#trabajo ul li a{
+    text-decoration: none;
+    font-size: 45px;
+    color: #76dbff; 
+ 
+}
+#trabajo ul li a:hover{
+    color: #ffffff;
+    font-size: 46px;
+}
+
+/* termina  trabajo*/
+/* sobre aptitudes*/
+#aptitudes{
+    width: 80%;
+    margin: 0 auto;
+    height: 1690px;
+    background-image: url(imagenes/aptitudes.jpg);
+    margin-bottom: 200px;
+    border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px; 
+    
+margin-bottom: 0;
+    height: 100%;
+ 
+    display: flex;
+text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+#aptitudes h1{
+    padding-top:50px;
+}
+.caja{
+    width: 100%;
+
+   
+
+    position: relative;
+}
+.caja h2 {
+    color: #76dbff;
+    background-color: rgba(0, 0, 143, 0.446);
+    cursor: pointer;
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 0;
+
+}
+.caja h2:hover{
+    background-color: rgb(0, 0, 143);
+    color: #ffffff;
+    
+}
+
+ul  li{
+    text-decoration: none;
+    font-size: 30px;
+    color: #ffffff;
+display: block;
+    margin-bottom: 0;
+    margin: 30px;
+margin-left: 0px;
+
+
+
+ }
+
+
+/* termina aptitudes*/
+footer{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+footer h1 a, footer p a{
+    text-decoration: none;
+    font-size: 40px;
+    color: #76dbff; 
+}
+footer h1 a:hover, footer p a:hover{
+    color: #ffffff;
+    font-size: 45px;
+}
+
+/* termina cuerpo */ 
+@media all and (min-width:800px)and (max-width:1200px) {
+
+
+
+    #botones{
+        width: 50%;
+      
+    
+    }
+    
+    
+    #botones ul li{
+    
+    margin-left: 0;
+    }
+    #botones ul li a{
+       
+        font-size: 23px;
+   
+        
+    }
+    #foto{
+   
+        width: 36%;
+        height: 100%;
+
+    }
+    
+    #contactos{
+        float: right;
+        width:50% ;
+        height: 100%;
+    
+    }
+    #contactos ul{
+    
+        padding-top: 44px;
+        float: right;
+        margin-right: 50px;
+    }
+   
+
+  
+}
+@media all and (max-width: 799px) {
+
+
+    #botones{
+        width: 50%;
+       height: 100vh;
+       
+    right: 150%;
+    position: absolute;
+
+
+
+               
+   
+    }
+    #botones ul{
+             background-color:  rgba(0, 0, 38, 0.953);;
+display: flex;
+    
+justify-content: space-evenly;
+align-items: center;
+flex-direction: column;
+ 
+position: fixed;
+height: 100%;
+margin-top: 50px;
+    }
+    
+  header{
+      height: 150px;
+ 
+  }
+    #foto{
+      
+        width: 36%;
+        height: 70%;
+        padding-left: 30px;
+       
+   
+    }
+    
+    #contactos{
+       
+        width:60% ;
+        height: 100%;
+        margin-left: 0;
+     
+    
+    }
+    #contactos ul{
+
+        
+        float: right;
+        display: flex;
+
+        justify-content: space-evenly;
+        align-items: center;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .icon-menu{
+		display: inline-block;
+left: 0;
+
+		position: fixed;
+	}
+    .menu_bar{
+		
+
+		width: 20px;
+		left: 20px;
+		margin-top: 19px;
+		position: relative;
+		z-index:1000000;
+		
+
+	}
+
+    #presentacion p{
+        font-size: 25px;
+        
+
+    
+    }
+    #presentacion h1,#trabajo h1,.caja h1{
+        font-size:35px;
+  
+        margin-top: 0;
+        text-align: center;
+    
+    }
+    #presentacion h1,#trabajo h1{
+        margin-top: 20px;
+    }
+    footer{
+    
+        flex-direction: column;
+     display: flex;
+           justify-content: space-evenly;
+        align-items: center;
+        
+    
+    
+    }
+    
+    footer h1 a, footer p a{
+       
+        font-size: 20px;
+    
+    }
+    footer h1 a:hover, footer p a:hover{
+     
+        font-size: 22px;
+    }
+    #trabajo ul li a{
+       
+        font-size: 25px;
+     
+     
+    }
+    #trabajo ul li a:hover{
+  
+        font-size: 26px;
+    }
+    ul  li{
+
+        font-size: 22px;
+
+    
+    
+     }
+     .caja h2 {
+      
+    
+        font-size: 30px;
+    
+    
+    }
+    #flecha {
+        width: 25px;
+        height: 25px;
+       
+   
+   
+        
+    }
+    
+    #flecha2,#flecha3{
+       width: 25px;
+       height:25px;
+   
+   
+
+    }
+    
+  
+}
